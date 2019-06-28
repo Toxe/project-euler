@@ -5,13 +5,7 @@ template <typename T>
 bool is_palindrome_number(const T number)
 {
     const std::string s{std::to_string(number)};
-    auto right = s.cend() - 1;
-
-    for (auto left = s.cbegin(); left < right; ++left, --right)
-        if (*left != *right)
-            return false;
-
-    return true;
+    return std::equal(s.begin(), s.end(), s.rbegin());
 }
 
 int euler004()
