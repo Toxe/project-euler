@@ -12,7 +12,7 @@ bool is_prime(T number)
     if (number < 2)
         return false;
 
-    const T root = std::sqrt(number);
+    const T root = (T) std::sqrt(number);
 
     for (T i = 2; i <= root; ++i)
         if (number % i == 0)
@@ -27,7 +27,7 @@ std::vector<T> prime_factorization(const T number)
     std::vector<T> factors;
     T n = number;
     T f = 2;
-    const T root = std::sqrtf(n);
+    const T root = (T) std::sqrtf(n);
 
     while (n > 1) {
         if (n % f == 0) {

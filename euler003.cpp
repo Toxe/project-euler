@@ -1,7 +1,7 @@
 #include "common.h"
 #include <iostream>
 
-int euler003()
+long long euler003()
 {
     const auto factors = prime_factorization(600851475143);
     return factors.back();
