@@ -3,7 +3,7 @@ project("Project Euler" LANGUAGES CXX)
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
-include_directories("$ENV{SUITE_BUILD}/include")
+add_library(common common.cpp)
 
 add_executable(euler001 euler001.cpp)
 add_executable(euler002 euler002.cpp)
@@ -16,6 +16,7 @@ add_executable(euler008 euler008.cpp)
 add_executable(euler009 euler009.cpp)
 add_executable(euler010 euler010.cpp)
 
+target_compile_features(common PUBLIC cxx_std_17)
 target_compile_features(euler001 PUBLIC cxx_std_17)
 target_compile_features(euler002 PUBLIC cxx_std_17)
 target_compile_features(euler003 PUBLIC cxx_std_17)
@@ -27,6 +28,10 @@ target_compile_features(euler008 PUBLIC cxx_std_17)
 target_compile_features(euler009 PUBLIC cxx_std_17)
 target_compile_features(euler010 PUBLIC cxx_std_17)
 
+target_link_libraries(euler007 PRIVATE common)
+target_link_libraries(euler010 PRIVATE common)
+
+set_target_properties(common PROPERTIES CXX_EXTENSIONS OFF)
 set_target_properties(euler001 PROPERTIES CXX_EXTENSIONS OFF)
 set_target_properties(euler002 PROPERTIES CXX_EXTENSIONS OFF)
 set_target_properties(euler003 PROPERTIES CXX_EXTENSIONS OFF)
