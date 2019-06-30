@@ -44,4 +44,16 @@ std::vector<T> prime_factorization(const T number)
     return factors;
 }
 
+template <typename T>
+std::vector<T> integer_factorization(const T number)
+{
+    std::vector<T> factors;
+
+    for (T i = 1; i <= number; ++i)
+        if (number % i == 0)
+            factors.push_back(i);
+
+    return factors;
+}
+
 #endif // PROJECT_EULER_COMMON_H_
