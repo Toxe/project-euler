@@ -33,7 +33,7 @@ const std::vector<std::string> num_one_to_nineteen{"one",
 
 std::string tens(int n)
 {
-    std::string s{num_tens[(std::size_t) (n / 10) - 2]};
+    std::string s{num_tens[static_cast<std::string::size_type>((n / 10) - 2)]};
 
     if (n % 10 > 0)
         s += " ";
@@ -43,7 +43,7 @@ std::string tens(int n)
 
 std::string one_to_nineteen(int n)
 {
-    return num_one_to_nineteen[(std::size_t) (n - 1)];
+    return num_one_to_nineteen[static_cast<std::string::size_type>(n - 1)];
 }
 
 std::string hundreds(int n)
@@ -85,7 +85,7 @@ int euler017()
 
     for (int i = 1; i <= 1000; ++i) {
         std::string s{write(i)};
-        sum += s.size() - (std::size_t) std::count(s.begin(), s.end(), ' ');
+        sum += s.size() - static_cast<std::string::size_type>(std::count(s.begin(), s.end(), ' '));
     }
 
     return sum;
