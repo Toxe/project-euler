@@ -2,9 +2,9 @@
 
 class Fibonacci {
 public:
-    int current() { return curr_; }
+    int current() const { return curr_; }
     int next();
-    void print();
+    void print() const;
 
 private:
     int n_ = 1;
@@ -21,7 +21,7 @@ int Fibonacci::next()
     return curr_;
 }
 
-void Fibonacci::print()
+void Fibonacci::print() const
 {
     std::cout << "F(" << n_ << ") = " << curr_ << std::endl;
 }
