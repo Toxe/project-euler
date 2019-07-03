@@ -3,7 +3,7 @@ project("Project Euler" LANGUAGES CXX)
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
-add_library(common common.cpp)
+add_library(common common.cpp common.h)
 
 add_executable(euler001 euler001.cpp)
 add_executable(euler002 euler002.cpp)
