@@ -85,7 +85,7 @@ int euler017()
 
     for (int i = 1; i <= 1000; ++i) {
         std::string s{write(i)};
-        sum += s.size() - static_cast<std::string::size_type>(std::count(s.begin(), s.end(), ' '));
+        sum += static_cast<int>(s.size() - static_cast<std::string::size_type>(std::count(s.begin(), s.end(), ' ')));
     }
 
     return sum;
