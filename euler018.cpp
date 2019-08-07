@@ -13,7 +13,7 @@ void update_row_values(const int num_values_in_current_row,
         const auto prev_row_left_value = (col > 0) ? *prev_left : 0;
         const auto prev_row_right_value = (col < num_values_in_current_row - 1) ? *prev_right : 0;
 
-        *(begin_of_current_row + col) += std::max(prev_row_left_value, prev_row_right_value);
+        *(begin_of_current_row + col) += static_cast<short>(std::max(prev_row_left_value, prev_row_right_value));
     }
 }
 

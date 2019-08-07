@@ -27,7 +27,7 @@ std::vector<T> prime_factorization(const T number)
     std::vector<T> factors;
     T n = number;
     T f = 2;
-    const T root = static_cast<T>(std::sqrtf(n));
+    const T root = static_cast<T>(std::sqrtf(static_cast<float>(n)));
 
     while (n > 1) {
         if (n % f == 0) {
