@@ -110,7 +110,7 @@ std::string euler013()
 
     long long sum = 0;
 
-    for (auto s : numbers)
+    for (const auto& s : numbers)
         sum += std::stoll(s.substr(0, 11));
 
     return std::to_string(sum).substr(0, 10);
