@@ -7,7 +7,7 @@ long long next_in_collatz_sequence(long long n)
     if (n <= 1)
         return 1;
 
-    if (n % 2)
+    if (n % 2 != 0)
         return 3 * n + 1;
 
     return n / 2;
