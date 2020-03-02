@@ -1,3 +1,5 @@
+// Smallest multiple
+
 #include <iostream>
 #include <numeric>
 

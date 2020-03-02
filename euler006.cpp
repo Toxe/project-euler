@@ -1,3 +1,5 @@
+// Sum square difference
+
 #include <iostream>
 
 int euler006()

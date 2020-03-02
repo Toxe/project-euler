@@ -1,3 +1,5 @@
+// Longest Collatz sequence
+
 #include <iostream>
 
 long long next_in_collatz_sequence(long long n)

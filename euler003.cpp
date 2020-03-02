@@ -1,3 +1,5 @@
+// Largest prime factor
+
 #include "common.h"
 #include <iostream>
 

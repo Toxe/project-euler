@@ -1,3 +1,5 @@
+// Lattice paths
+
 #include <iostream>
 
 long long euler015(int grid_size)

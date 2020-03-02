@@ -1,3 +1,5 @@
+// Multiples of 3 and 5
+
 #include <iostream>
 
 int euler001()

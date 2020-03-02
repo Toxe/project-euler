@@ -1,3 +1,5 @@
+// Largest product in a grid
+
 #include <algorithm>
 #include <iostream>
 

@@ -1,3 +1,5 @@
+// Power digit sum
+
 #include <iostream>
 #include <numeric>
 #include <vector>

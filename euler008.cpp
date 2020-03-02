@@ -1,3 +1,5 @@
+// Largest product in a series
+
 #include <iostream>
 #include <string>
 

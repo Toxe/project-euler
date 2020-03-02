@@ -1,3 +1,5 @@
+// Summation of primes
+
 #include "common.h"
 #include <iostream>
 

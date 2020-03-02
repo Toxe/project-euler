@@ -1,3 +1,5 @@
+// Special Pythagorean triplet
+
 #include <iostream>
 
 int euler009()

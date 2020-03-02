@@ -1,3 +1,5 @@
+// Highly divisible triangular number
+
 #include "common.h"
 #include <algorithm>
 #include <iostream>
