@@ -1,0 +1,17 @@
+---
+Checks: 'bugprone-*,
+         clang-analyzer-*,
+         clang-diagnostic-*,
+         cppcoreguidelines-*,
+         misc-*,
+         modernize-*,
+         performance-*,
+         portability-*,
+         readability-*,
+
+         -modernize-use-trailing-return-type,
+         -readability-braces-around-statements,
+
+         -cppcoreguidelines-avoid-magic-numbers,
+         -readability-magic-numbers'
+...
